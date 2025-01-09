@@ -476,9 +476,9 @@ var beepbox = (function (exports) {
     ]);
     Config.blackKeyNameParents = [-1, 1, -1, 1, -1, 1, -1, -1, 1, -1, 1, -1];
     Config.tempoMin = 1;
-    Config.tempoMax = 500;
-    Config.octaveMin = -2;
-    Config.octaveMax = 2;
+    Config.tempoMax = 1000;
+    Config.octaveMin = -8;
+    Config.octaveMax = 8;
     Config.echoDelayRange = 24;
     Config.echoDelayStepTicks = 4;
     Config.echoSustainRange = 8;
@@ -673,6 +673,7 @@ var beepbox = (function (exports) {
         { name: "hum", voices: 2, spread: 0.045, offset: 0.0, expression: 1.0, sign: 1.0 },
         { name: "honky tonk", voices: 2, spread: 0.09, offset: 0.0, expression: 1.0, sign: 1.0 },
         { name: "dissonant", voices: 2, spread: 0.25, offset: 0.0, expression: 0.9, sign: 1.0 },
+        { name: "energetic", voices: 2, spread: 6.15, offset: 6.435, expression: 0.85, sign: 0.9 },
         { name: "fifth", voices: 2, spread: 3.5, offset: 3.5, expression: 0.9, sign: 1.0 },
         { name: "octave", voices: 2, spread: 6.0, offset: 6.0, expression: 0.8, sign: 1.0 },
         { name: "bowed", voices: 2, spread: 0.02, offset: 0.0, expression: 1.0, sign: -1.0 },
