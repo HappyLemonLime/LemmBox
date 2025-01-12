@@ -75,7 +75,7 @@
             margin-top: 0.5em;
             margin-bottom: 0.5em;
             -webkit-text-stroke-width: 0;
-            color: var(--mod-title, #9c64f7);
+            color: var(--mod-title, #eef078);
         }
 
         h2 {
@@ -137,6 +137,10 @@
 				flex-shrink: 0;
 			}
         }
+		
+		.bsky-dropdown {
+			white-space: nowrap;
+		}
 
         /* narrow screen */
 		@media (max-width: 710px) {
@@ -154,6 +158,14 @@
                 align-items: center;
             }
         }
+		
+		.dropdown-info {
+	font-size:9px;
+	color: #868c95;
+	text-align: center;
+	font-family: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
     </style>
 </head>
 <body id="secondImage">
@@ -163,7 +175,7 @@
 
         if (image != null && image !== "null" && image !== "undefined") {
             el.style.backgroundImage="url(" + image + ")";
-            el.style.backgroundRepeat= "repeat";
+            el.style.backgroundRepeat= "repeat";	
         }
     </script>
     <div id="beepboxEditorContainer">
@@ -181,7 +193,8 @@
             </h1>
             
             <p id="introduction">
-                LemmBox is a modification of UltraBox, and UltraBox is a mod first envisioned by Neptendo, and made possible with help from contributing community members.<br>
+                LemmBox is a modification of UltraBox that tries to add featurs found in other mods alongside some of it's own. you can find the full feature set <a href="./lemmbox-features.html">here</a> This mod is based off of UltraBox. You can find UltraBox <a href="ultrabox.github.io">here</a>
+				<br><br>
                 It takes elements from most of the beepbox mods available (see <a href="./credits.html">credits</a>) and puts them in one convenient package.
             </p>
             <!-- <p>
@@ -192,6 +205,8 @@
             <p>
                 If you have any questions, please visit the <a href="./faq.html">FAQ</a>.
             </p>
+			<br><br>
+			
             <!--
     <div class="donation">
         BeepBox is a passion project, and will always be free to use. If you find it valuable and have the means, any gratuity via
@@ -284,10 +299,12 @@
                     </p>
                 </section>
             </main>
-            <aside class="bsky-column">
-				<h2>
-					Shared on Bluesky:
-				</h2>
+			
+			 <details>
+  <summary class="bsky-dropdown">Songs shared on Bluesky <a class="dropdown-info"> (dropdown click the triangle!!)</a> </summary> 
+				 
+  <p><aside class="bsky-column">
+				
 				<div>
 					<!-- <a class="bsky-timeline" data-width="300" data-height="2000" data-link-color="#9988ff" data-chrome="noheader nofooter transparent" data-dnt="true" data-theme="dark" href="https://twitter.com/beepboxco?ref_src=twsrc%5Etfw" target="_blank">Songs retweeted by @beepboxco</a> -->
                     <bsky-embed
@@ -303,7 +320,10 @@
 					  </bsky-embed>
 					<script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>
 				</div>
-			</aside>
+			</aside></p>
+</details> 
+			
+            
         </div>
     </div>
 

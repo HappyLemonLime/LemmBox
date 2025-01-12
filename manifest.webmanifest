@@ -1,7 +1,7 @@
 {
-	"name": "UltraBox",
-	"short_name": "UltraBox",
-	"description": "UltraBox is a mod of BeepBox that aims to combine every other beepmod into one.",
+	"name": "LemmBox",
+	"short_name": "LemmBox",
+	"description": "LemmBox is a mod of UltraBox that tries to add more options for creativity",
 	"scope": "/",
 	"start_url": ".",
 	"display": "browser",
